@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!--[if lte IE 6 ]><script type="text/javascript">window.location.href="ie6_close/index_ru.html";</script><![endif]-->
+	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/all_ie.css"><![endif]-->
+    <!--[if lt IE 10]><script type="text/javascript" src="js/pie.js"></script><![endif]-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/niceRadiobox.js"></script>
+    <script type="text/javascript" src="js/jquery.reveal.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<div id="Login" class="reveal_modal">
+	<p class="modal_title">вход</p>
+	<form class="enter_form">
+		<p><span>фамилия</span>
+			<input type="text"></p>
+		<p><span>имя</span>
+			<input type="text"></p>
+		<p class="reg_pass">
+			<a href="#">рЕГИСТРАЦИЯ</a>
+			<a href="#">ЗАБЫЛИ ПАРОЛЬ?</a>
+		</p>
+		<div class="reg_serv">
+			<p>Вы можете войти на сайт, если вы зарегистрированы на одном из этих сервисов:</p>
+			<ul>
+				<li class="soc1"><a href="#"></a></li>
+				<li class="soc2"><a href="#"></a></li>
+				<li class="soc3"><a href="#"></a></li>
+				<li class="soc4"><a href="#"></a></li>
+				<li class="soc5"><a href="#"></a></li>
+				<li class="soc6"><a href="#"></a></li>
+				<li class="soc7"><a href="#"></a></li>
+			</ul>
+		</div>
+		<p class="enter_bottom">
+			<button type="submit" class="btn">вОЙТИ<span></span></button>
+		</p>
+	</form>
+	<a class="close-reveal-modal">закрыть<span></span></a>
+</div>
+<div id="Cart" class="reveal_modal">
+	<p class="modal_title">КОРЗИНА</p>
+	<form class="order_form" ation="order.php" method="">
+		<div class="info_order">
+			<table>
+				<thead>
+					<tr>
+						<td>Наименование</td>
+						<td>Количество</td>
+						<td>стоимость</td>
+						<td class="last_item_table"></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<a href="#" class="product_add"><img src="img/prod_table1.jpg" alt="" />Спойлер Mugen-style <span>для Accord 7</span></a>
+						</td>
+						<td>
+							<div class="count_pl_m">
+								<input type="text" value="1">
+								<span class="plus"></span>
+								<span class="minus"></span>
+							</div>
+						</td>
+						<td><p class="price">5 900 <span>руб.</span></p></td>
+						<td class="last_item_table"><a href="#" class="delete">удалтить<span></span></a></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#" class="product_add"><img src="img/prod_table1.jpg" alt="" />Спойлер Mugen-style <span>для Accord 7</span></a>
+						</td>
+						<td>
+							<div class="count_pl_m">
+								<input type="text" value="1">
+								<span class="plus"></span>
+								<span class="minus"></span>
+							</div>
+						</td>
+						<td><p class="price">5 900 <span>руб.</span></p></td>
+						<td class="last_item_table"><a href="#" class="delete">удалтить<span></span></a></td
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="4">
+							<div class="order_bottom">
+								<button type="submit" class="btn">оформить<span></span></button>
+							</div>
+							<p class="price">
+								<span class="summ">ИТОГО:</span> 11 800<span>руб.</span>
+							</p>
+							<a href="#" class="back_buy">ВЕРНУТЬСЯ К ПОКУПКАМ<span></span></a>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</form>
+	<a class="close-reveal-modal">закрыть<span></span></a>
+</div>
+<nav class="menu">
+	<ul>
+		<li><a href="#">КАТАЛОГ</a></li>
+		<li><a href="#">Как купить?</a></li>
+		<li><a href="#">ДОСТАВКА</a></li>
+		<li><a href="#">Покупка в кредит</a></li>
+		<li><a href="#">Статьи</a></li>
+		<li><a href="#">Контакты</a></li>
+	</ul>
+</nav>
+<div id="wrapper">
+    <header id="header">
+    	<div class="cart index-class-cart">
+    		<a href="#" class="big-link" data-reveal-id="Cart" data-animation="fade">
+    			<span class="icon_cart"></span>
+    			<span>В вашей корзине</span>
+    			<span>пока пусто</span>
+    		</a>
+		</div>
+		<div class="login">
+			<a href="#" class="big-link" data-reveal-id="Login" data-animation="fade"><span></span></a>
+		</div>
+		<div class="logo"><a href="#"><img src="img/logo.png" alt="" /></a>
+			<span>ДЕТАЛИ ТЮНИНГА И АКСЕССУАРЫ</span>
+		</div>	
+		<div class="phone_numb_one">
+			<p><span>8 800</span> 555 0376</p>
+			<span>звонок по России бесплатный</span>
+		</div>
+		<div class="phone_numb_two">
+			<p>+7 925 461 6171</p>
+			<span>мобильный телефон</span>
+		</div>
+		<div class="phone_numb_two">
+			<p>+7 925 461 6171</p>
+			<span>мобильный телефон</span>
+		</div>
+    </header><!-- /header-->
+
+    <section id="middle">
+        <div id="container" class="clearfix one_column_main">
+
+			<div id="content">
+
+				<div class="search-bl">
+					<span class="search-tt">Поиск детали по артикулу:</span>
+					<form action="#" method="#">
+						<input type="text" placeholder="Например: 9091901164">
+						<button type="button" class="btn">НАЙТИ</button>
+					</form>
+					<a href="#" class="search-qw"></a>
+				</div>
+
+				<div class="main_beautiful_box">
+					<ul class="catalog_tuning">
+						<li class="catalog_item1"><a href="#">Запрос <br>по VIN</a></li>
+						<li class="catalog_item2"><a href="#">Оригинальные <br>запчасти</a></li>
+						<li class="catalog_item3"><a href="#">неОригинальные <br/>запчасти</a></li>
+						<li class="catalog_item4"><a href="#">каталог <br/>Аксессуаров</a></li>
+						<li class="catalog_itemX"><a href="#">каталог<br/>ТО</a></li>	
+					</ul>
+				</div>
+
+				<ul class="bread_crumbs">
+					<li><a href="#">Главная</a></li> 
+				</ul>
+				<h1>Каталог автозапчастей</h1>
+
+				<div class="filter-tecdoc">
+					<span>Быстрый фильтр:</span>
+					<input type="text" placeholder="Начните вводить слово...">
+				</div>
+
+				<div class="catalog-tecdoc">
+					<div>
+						<span class="title-cat-letter">A</span>
+						<ul>
+							<li><a href="#">AC
+							<li><a href="#">ACURA</a></li>
+							<li><a href="#">AEBI</a></li>
+							<li><a href="#">AIXAM</a></li>
+							<li><a href="#">ALFA ROMEO</a></li>
+							<li><a href="#">ALLGAIER</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">ALPINA</a></li>
+							<li><a href="#">ALPINE</a></li>
+							<li><a href="#">AMERICANMOTORS(FORD)</a></li>
+							<li><a href="#">ANADOL</a></li>
+							<li><a href="#">ANFINI</a></li>
+							<li><a href="#">ARMATRAC</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">ARO</a></li>
+							<li><a href="#">ARTEGA</a></li>
+							<li><a href="#">ASIA MOTORS</a></li>
+							<li><a href="#">ASKAM (FARGO/DESOTO)</a></li>
+							<li><a href="#">ASTON MARTIN</a></li>
+							<li><a href="#">ASTRA</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">AUDI</a></li>
+							<li><a href="#">AUDI (FAW)</a></li>
+							<li><a href="#">AUSTINAUSTIN-HEALEY</a></li>
+							<li><a href="#">AUTO UNION</a></li>
+							<li><a href="#">AUTOBIANCHI</a></li>
+							<li><a href="#">AVIA</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">AYATS</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<span class="title-cat-letter">B</span>
+						<ul>
+							<li><a href="#">BAJAJ TEMPO</a></li>
+							<li><a href="#">BAOJUN (SGMW)</a></li>
+							<li><a href="#">BAOLONG</a></li>
+							<li><a href="#">BARKAS</a></li>
+							<li><a href="#">BAUTZ</a></li>
+							<li><a href="#">BAW</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">BCS</a></li>
+							<li><a href="#">BEDFORD</a></li>
+							<li><a href="#">BEIJING BENZ (BBDC)</a></li>
+							<li><a href="#">BENTLEY</a></li>
+							<li><a href="#">BERKHOF</a></li>
+							<li><a href="#">BERTONE</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">BITTER</a></li>
+							<li><a href="#">BM TRACTORS</a></li>
+							<li><a href="#">BMC</a></li>
+							<li><a href="#">BMW</a></li>
+							<li><a href="#">BMW (BRILLIANCE)</a></li>
+							<li><a href="#">BOND</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">BORGWARD</a></li>
+							<li><a href="#">BOVA</a></li>
+							<li><a href="#">BRANSON TRACTORS</a></li>
+							<li><a href="#">BREDAMENARINIBUS</a></li>
+							<li><a href="#">BRILLIANCE</a></li>
+							<li><a href="#">BRISTOL</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">BUCHER</a></li>
+							<li><a href="#">BUGATTI</a></li>
+							<li><a href="#">BUICK</a></li>
+							<li><a href="#">BUICK (SGM)</a></li>
+							<li><a href="#">BYD</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<span class="title-cat-letter">C</span>
+						<ul>
+							<li><a href="#">CADILLAC</a></li>
+							<li><a href="#">CADILLAC (SGM)</a></li>
+							<li><a href="#">CALLAWAY</a></li>
+							<li><a href="#">CARBODIES</a></li>
+							<li><a href="#">CARON</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">CARRARO</a></li>
+							<li><a href="#">CASE IH</a></li>
+							<li><a href="#">CATERHAM</a></li>
+							<li><a href="#">CHALLENGER</a></li>
+							<li><a href="#">CHANGAN (CHANA)</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">CHANGFENG</a></li>
+							<li><a href="#">CHANGHE</a></li>
+							<li><a href="#">CHECKER</a></li>
+							<li><a href="#">CHENGLONG</a></li>
+							<li><a href="#">CHERY</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">CHEVROLET</a></li>
+							<li><a href="#">CHEVROLET (SGM)</a></li>
+							<li><a href="#">CHEVROLET (SGMW)</a></li>
+							<li><a href="#">CHRYSLER</a></li>
+							<li><a href="#">CHRYSLER (BBDC)</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">CITROEN (DF-PSA)</a></li>
+							<li><a href="#">CITROËN</a></li>
+							<li><a href="#">CLAAS</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<span class="title-cat-letter">D</span>
+						<ul>
+							<li><a href="#">DACIA</a></li>
+							<li><a href="#">DADI</a></li>
+							<li><a href="#">DAEWOO</a></li>
+							<li><a href="#">DAF</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">DAIHATSU</a></li>
+							<li><a href="#">DAIHATSU (FAW)</a></li>
+							<li><a href="#">DAIMLER</a></li>
+							<li><a href="#">DALLAS</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">DE LOREAN</a></li>
+							<li><a href="#">DE TOMASO</a></li>
+							<li><a href="#">DENNIS</a></li>
+							<li><a href="#">DEUTZ-FAHR</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">DODGE</a></li>
+							<li><a href="#">DONGFENG</a></li>
+							<li><a href="#">DONGFENG (DFAC)</a></li>
+							<li><a href="#">DONGFENG (DFAM)</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">DONGNAN (SOUEAST)</a></li>
+							<li><a href="#">DR</a></li>
+							<li><a href="#">DRÖGMÖLLER</a></li>
+							<li><a href="#">DURSO</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<span class="title-cat-letter">E</span>
+						<ul>
+							<li><a href="#">EAGLE</a></li>
+							<li><a href="#">EBRO</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">EMGRAND (GEELY)</a></li>
+							<li><a href="#">ENGLON (GEELY)</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">ERF</a></li>
+							<li><a href="#">ETSONG</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">EUNOS</a></li>
+							<li><a href="#">EUROPESTAR</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<span class="title-cat-letter">F</span>
+						<ul>
+							<li><a href="#">FAHR</a></li>
+							<li><a href="#">FAP</a></li>
+							<li><a href="#">FAW</a></li>
+							<li><a href="#">FAW JIEFANG</a></li>
+							<li><a href="#">FAW JILIN</a></li>
+							<li><a href="#">FAW TIANJIN</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">FENDT</a></li>
+							<li><a href="#">FENGSHEN</a></li>
+							<li><a href="#">FERRARI</a></li>
+							<li><a href="#">FERRARI</a></li>
+							<li><a href="#">FIAT</a></li>
+							<li><a href="#">FIAT (GAC)</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">FIAT (NANJING)</a></li>
+							<li><a href="#">FISKER</a></li>
+							<li><a href="#">FODEN TRUCKS</a></li>
+							<li><a href="#">FORD</a></li>
+							<li><a href="#">FORD (CHANGAN)</a></li>
+							<li><a href="#">FORD (JMC)</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">FORD ASIA / OZEANIA</a></li>
+							<li><a href="#">FORD AUSTRALIA</a></li>
+							<li><a href="#">FORD OTOSAN</a></li>
+							<li><a href="#">FORD USA</a></li>
+							<li><a href="#">FORTA</a></li>
+							<li><a href="#">FOTON</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">FPV</a></li>
+							<li><a href="#">FSO</a></li>
+							<li><a href="#">FUQI</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+        </div><!-- #container-->
+    </section><!-- #middle-->
+</div><!-- #wrapper -->
+
+<footer id="footer" class="footer">
+	<div class="footer_centered">
+		<div class="phone_numb_one">
+			<p><span>8 800</span> 555 0376</p>
+			<span>+7 925 461 6171</span>
+		</div>
+		<div class="footer_logo"><a href="#"><img src="img/footer-logo.png" alt="" /></a></div>
+		<ul class="footer_menu">
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Доставка</a></li>
+			<li><a href="#">Статьи</a></li>
+			<li><a href="#">Как купить?</a></li>
+			<li><a href="#">Покупка в кредит</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</div>
+</footer><!-- #footer -->
+</body>
+</html>

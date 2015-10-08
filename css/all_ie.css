@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+.btn,.br-link-typo a,.back_buy,.menu li,.brands_menu li a,.recomended_products .icon_price,.footer_menu li,.bread_crumbs li,.payment_order .rbox,.reg_serv li,.pagination li, .aside-capcha, .search-t, .search-bl form, .search-bl form input, .search-qw, .catalog_tuning li, .middle_beutiful .catalog_tuning, .info-artcl, .t-artcl-icon {
+	*zoom :1; 
+	*display: inline;
+}
+
+input[type="text"] {line-height: 33px;}
+.search-bl form input,
+.filter-tecdoc input {line-height: 40px;}
+
+.clearfix {*zoom: 1;}
+
+.wrap_hover_effect{*cursor: pointer;}
+.info_order table td img{
+	*position: relative;
+	*top: -20px;
+}
+.info_order table td a{
+	*line-height: 20px;
+}
+.info_order table tfoot td .price{
+	*line-height: 36px;
+}
+.btn{
+	padding: 0 0 0 30px;
+}
+.product_wraper_catalog{
+	*padding-bottom: 60px;
+}
