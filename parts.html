@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!--[if lte IE 6 ]><script type="text/javascript">window.location.href="ie6_close/index_ru.html";</script><![endif]-->
+	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/all_ie.css"><![endif]-->
+    <!--[if lt IE 10]><script type="text/javascript" src="js/pie.js"></script><![endif]-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/niceRadiobox.js"></script>
+    <script type="text/javascript" src="js/jquery.reveal.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<div id="Login" class="reveal_modal">
+	<p class="modal_title">вход</p>
+	<form class="enter_form">
+		<p><span>фамилия</span>
+			<input type="text"></p>
+		<p><span>имя</span>
+			<input type="text"></p>
+		<p class="reg_pass">
+			<a href="#">рЕГИСТРАЦИЯ</a>
+			<a href="#">ЗАБЫЛИ ПАРОЛЬ?</a>
+		</p>
+		<div class="reg_serv">
+			<p>Вы можете войти на сайт, если вы зарегистрированы на одном из этих сервисов:</p>
+			<ul>
+				<li class="soc1"><a href="#"></a></li>
+				<li class="soc2"><a href="#"></a></li>
+				<li class="soc3"><a href="#"></a></li>
+				<li class="soc4"><a href="#"></a></li>
+				<li class="soc5"><a href="#"></a></li>
+				<li class="soc6"><a href="#"></a></li>
+				<li class="soc7"><a href="#"></a></li>
+			</ul>
+		</div>
+		<p class="enter_bottom">
+			<button type="submit" class="btn">вОЙТИ<span></span></button>
+		</p>
+	</form>
+	<a class="close-reveal-modal">закрыть<span></span></a>
+</div>
+<div id="Cart" class="reveal_modal">
+	<p class="modal_title">КОРЗИНА</p>
+	<form class="order_form" ation="order.php" method="">
+		<div class="info_order">
+			<table>
+				<thead>
+					<tr>
+						<td>Наименование</td>
+						<td>Количество</td>
+						<td>стоимость</td>
+						<td class="last_item_table"></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<a href="#" class="product_add"><img src="img/prod_table1.jpg" alt="" />Спойлер Mugen-style <span>для Accord 7</span></a>
+						</td>
+						<td>
+							<div class="count_pl_m">
+								<input type="text" value="1">
+								<span class="plus"></span>
+								<span class="minus"></span>
+							</div>
+						</td>
+						<td><p class="price">5 900 <span>руб.</span></p></td>
+						<td class="last_item_table"><a href="#" class="delete">удалтить<span></span></a></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#" class="product_add"><img src="img/prod_table1.jpg" alt="" />Спойлер Mugen-style <span>для Accord 7</span></a>
+						</td>
+						<td>
+							<div class="count_pl_m">
+								<input type="text" value="1">
+								<span class="plus"></span>
+								<span class="minus"></span>
+							</div>
+						</td>
+						<td><p class="price">5 900 <span>руб.</span></p></td>
+						<td class="last_item_table"><a href="#" class="delete">удалтить<span></span></a></td
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="4">
+							<div class="order_bottom">
+								<button type="submit" class="btn">оформить<span></span></button>
+							</div>
+							<p class="price">
+								<span class="summ">ИТОГО:</span> 11 800<span>руб.</span>
+							</p>
+							<a href="#" class="back_buy">ВЕРНУТЬСЯ К ПОКУПКАМ<span></span></a>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</form>
+	<a class="close-reveal-modal">закрыть<span></span></a>
+</div>
+<nav class="menu">
+	<ul>
+		<li><a href="#">КАТАЛОГ</a></li>
+		<li><a href="#">Как купить?</a></li>
+		<li><a href="#">ДОСТАВКА</a></li>
+		<li><a href="#">Покупка в кредит</a></li>
+		<li><a href="#">Статьи</a></li>
+		<li><a href="#">Контакты</a></li>
+	</ul>
+</nav>
+<div id="wrapper">
+    <header id="header">
+    	<div class="cart index-class-cart">
+    		<a href="#" class="big-link" data-reveal-id="Cart" data-animation="fade">
+    			<span class="icon_cart"></span>
+    			<span>В вашей корзине</span>
+    			<span>пока пусто</span>
+    		</a>
+		</div>
+		<div class="login">
+			<a href="#" class="big-link" data-reveal-id="Login" data-animation="fade"><span></span></a>
+		</div>
+		<div class="logo"><a href="#"><img src="img/logo.png" alt="" /></a>
+			<span>ДЕТАЛИ ТЮНИНГА И АКСЕССУАРЫ</span>
+		</div>	
+		<div class="phone_numb_one">
+			<p><span>8 800</span> 555 0376</p>
+			<span>звонок по России бесплатный</span>
+		</div>
+		<div class="phone_numb_two">
+			<p>+7 925 461 6171</p>
+			<span>мобильный телефон</span>
+		</div>
+		<div class="phone_numb_two">
+			<p>+7 925 461 6171</p>
+			<span>мобильный телефон</span>
+		</div>
+    </header><!-- /header-->
+
+    <section id="middle">
+        <div id="container" class="clearfix one_column_main">
+
+			<div id="content">
+
+				<div class="search-bl">
+					<span class="search-tt">Поиск детали по артикулу:</span>
+					<form action="#" method="#">
+						<input type="text" placeholder="Например: 9091901164">
+						<button type="button" class="btn">НАЙТИ</button>
+					</form>
+					<a href="#" class="search-qw"></a>
+				</div>
+
+				<div class="main_beautiful_box">
+					<ul class="catalog_tuning">
+						<li class="catalog_item1"><a href="#">Запрос <br>по VIN</a></li>
+						<li class="catalog_item2"><a href="#">Оригинальные <br>запчасти</a></li>
+						<li class="catalog_item3"><a href="#">неОригинальные <br/>запчасти</a></li>
+						<li class="catalog_item4"><a href="#">каталог <br/>Аксессуаров</a></li>
+						<li class="catalog_itemX"><a href="#">каталог<br/>ТО</a></li>						
+					</ul>
+				</div>
+
+				<ul class="bread_crumbs">
+						<li><a href="#">Главная</a> /</li> 
+						<li><a href="#">Каталог товаров</a> /</li>
+						<li><a href="#">Запчасти</a></li>
+					</ul>
+				<h1>Каталог оригинальных автозапчастей</h1>
+				<ul class="brands-details">
+					<li>
+						<a href="#">
+							<img src="img/bd1.jpg" alt="" />
+							<span>chevrolet</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd2.jpg" alt="" />
+							<span>ford</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd3.jpg" alt="" />
+							<span>honda</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd4.jpg" alt="" />
+							<span>mazda</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd5.jpg" alt="" />
+							<span>mitsubish</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd6.jpg" alt="" />
+							<span>Opel</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd7.jpg" alt="" />
+							<span>AUDI</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd8.jpg" alt="" />
+							<span>BMW</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd9.jpg" alt="" />
+							<span>toyota</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd10.jpg" alt="" />
+							<span>Subaru</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd11.jpg" alt="" />
+							<span>Suzuki</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd12.jpg" alt="" />
+							<span>BMW</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd13.jpg" alt="" />
+							<span>Nissan</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd14.jpg" alt="" />
+							<span>peugeot</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd15.jpg" alt="" />
+							<span>volvo</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd16.jpg" alt="" />
+							<span>mercedes</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd17.jpg" alt="" />
+							<span>hyundai</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd18.jpg" alt="" />
+							<span>infiniti</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd19.jpg" alt="" />
+							<span>Skoda	</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/bd20.jpg" alt="" />
+							<span>lexus</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+        </div><!-- #container-->
+    </section><!-- #middle-->
+</div><!-- #wrapper -->
+
+<footer id="footer" class="footer">
+	<div class="footer_centered">
+		<div class="phone_numb_one">
+			<p><span>8 800</span> 555 0376</p>
+			<span>+7 925 461 6171</span>
+		</div>
+		<div class="footer_logo"><a href="#"><img src="img/footer-logo.png" alt="" /></a></div>
+		<ul class="footer_menu">
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Доставка</a></li>
+			<li><a href="#">Статьи</a></li>
+			<li><a href="#">Как купить?</a></li>
+			<li><a href="#">Покупка в кредит</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</div>
+</footer><!-- #footer -->
+</body>
+</html>

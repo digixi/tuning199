@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!--[if lte IE 6 ]><script type="text/javascript">window.location.href="ie6_close/index_ru.html";</script><![endif]-->
+	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/all_ie.css"><![endif]-->
+    <!--[if lt IE 10]><script type="text/javascript" src="js/pie.js"></script><![endif]-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/niceRadiobox.js"></script>
+    <script type="text/javascript" src="js/jquery.reveal.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<div id="Login" class="reveal_modal">
+	<p class="modal_title">вход</p>
+	<form class="enter_form">
+		<p><span>фамилия</span>
+			<input type="text"></p>
+		<p><span>имя</span>
+			<input type="text"></p>
+		<p class="reg_pass">
+			<a href="#">рЕГИСТРАЦИЯ</a>
+			<a href="#">ЗАБЫЛИ ПАРОЛЬ?</a>
+		</p>
+		<div class="reg_serv">
+			<p>Вы можете войти на сайт, если вы зарегистрированы на одном из этих сервисов:</p>
+			<ul>
+				<li class="soc1"><a href="#"></a></li>
+				<li class="soc2"><a href="#"></a></li>
+				<li class="soc3"><a href="#"></a></li>
+				<li class="soc4"><a href="#"></a></li>
+				<li class="soc5"><a href="#"></a></li>
+				<li class="soc6"><a href="#"></a></li>
+				<li class="soc7"><a href="#"></a></li>
+			</ul>
+		</div>
+		<p class="enter_bottom">
+			<button type="submit" class="btn">вОЙТИ<span></span></button>
+		</p>
+	</form>
+	<a class="close-reveal-modal">закрыть<span></span></a>
+</div>
+<div id="Cart" class="reveal_modal">
+	<p class="modal_title">КОРЗИНА</p>
+	<form class="order_form" ation="order.php" method="">
+		<div class="info_order">
+			<table>
+				<thead>
+					<tr>
+						<td>Наименование</td>
+						<td>Количество</td>
+						<td>стоимость</td>
+						<td class="last_item_table"></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<a href="#" class="product_add"><img src="img/prod_table1.jpg" alt="" />Спойлер Mugen-style <span>для Accord 7</span></a>
+						</td>
+						<td>
+							<div class="count_pl_m">
+								<input type="text" value="1">
+								<span class="plus"></span>
+								<span class="minus"></span>
+							</div>
+						</td>
+						<td><p class="price">5 900 <span>руб.</span></p></td>
+						<td class="last_item_table"><a href="#" class="delete">удалтить<span></span></a></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#" class="product_add"><img src="img/prod_table1.jpg" alt="" />Спойлер Mugen-style <span>для Accord 7</span></a>
+						</td>
+						<td>
+							<div class="count_pl_m">
+								<input type="text" value="1">
+								<span class="plus"></span>
+								<span class="minus"></span>
+							</div>
+						</td>
+						<td><p class="price">5 900 <span>руб.</span></p></td>
+						<td class="last_item_table"><a href="#" class="delete">удалтить<span></span></a></td
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="4">
+							<div class="order_bottom">
+								<button type="submit" class="btn">оформить<span></span></button>
+							</div>
+							<p class="price">
+								<span class="summ">ИТОГО:</span> 11 800<span>руб.</span>
+							</p>
+							<a href="#" class="back_buy">ВЕРНУТЬСЯ К ПОКУПКАМ<span></span></a>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</form>
+	<a class="close-reveal-modal">закрыть<span></span></a>
+</div>
+<nav class="menu">
+	<ul>
+		<li><a href="#">КАТАЛОГ</a></li>
+		<li><a href="#">Как купить?</a></li>
+		<li><a href="#">ДОСТАВКА</a></li>
+		<li><a href="#">Покупка в кредит</a></li>
+		<li><a href="#">Статьи</a></li>
+		<li><a href="#">Контакты</a></li>
+	</ul>
+</nav>
+<div id="wrapper">
+    <header id="header">
+    	<div class="cart index-class-cart">
+    		<a href="#" class="big-link" data-reveal-id="Cart" data-animation="fade">
+    			<span class="icon_cart"></span>
+    			<span>В вашей корзине</span>
+    			<span>пока пусто</span>
+    		</a>
+		</div>
+		<div class="login">
+			<a href="#" class="big-link" data-reveal-id="Login" data-animation="fade"><span></span></a>
+		</div>
+		<div class="logo"><a href="#"><img src="img/logo.png" alt="" /></a>
+			<span>ДЕТАЛИ ТЮНИНГА И АКСЕССУАРЫ</span>
+		</div>	
+		<div class="phone_numb_one">
+			<p><span>8 800</span> 555 0376</p>
+			<span>звонок по России бесплатный</span>
+		</div>
+		<div class="phone_numb_two">
+			<p>+7 925 461 6171</p>
+			<span>мобильный телефон</span>
+		</div>
+		<div class="phone_numb_two">
+			<p>+7 925 461 6171</p>
+			<span>мобильный телефон</span>
+		</div>
+    </header><!-- /header-->
+    <section id="middle">
+		<div id="container" class="clearfix one_column_main">
+			<div id="content">
+				<div class="search-bl">
+					<span class="search-tt">Поиск детали по артикулу:</span>
+					<form action="#" method="#">
+						<input type="text" placeholder="Например: 9091901164">
+						<button type="button" class="btn">НАЙТИ</button>
+					</form>
+					<a href="#" class="search-qw"></a>
+				</div>
+				<div class="main_beautiful_box">
+					<ul class="catalog_tuning">
+						<li class="catalog_item1"><a href="#">Запрос <br>по VIN</a></li>
+						<li class="catalog_item2"><a href="#">Оригинальные <br>запчасти</a></li>
+						<li class="catalog_item3"><a href="#">неОригинальные<br/>запчасти</a></li>
+						<li class="catalog_item4"><a href="#">каталог<br/>Аксессуаров</a></li>
+						<li class="catalog_itemX"><a href="#">каталог<br/>ТО</a></li>
+					</ul>
+
+					<div class="main-slider">
+						<ul class="slides">
+							<li>
+								<img src="img/main-slider1.jpg" alt="">
+								<div class="aside-slide">
+									<span class="slide-tt">
+										<b>РЕГУЛИРУЕМЫЕ СТОЙКИ</b> по доступной цене!
+									</span>
+									<p>Стойка телескопическая с регулируемыми усилиями демпфирования DEMFI Special позволяет водителю самостоятельно устанавливать желаемые усилия демпфирования!</p>
+									<span class="slide-more"><a href="#">Узнать больше</a></span>
+								</div>
+							</li>
+							<li>
+								<img src="img/main-slider1.jpg" alt="">
+								<div class="aside-slide">
+									<span class="slide-tt">
+										<b>РЕГУЛИРУЕМЫЕ СТОЙКИ</b> по доступной цене!
+									</span>
+									<p>Стойка телескопическая с регулируемыми усилиями демпфирования DEMFI Special позволяет водителю самостоятельно устанавливать желаемые усилия демпфирования!</p>
+									<span class="slide-more"><a href="#">Узнать больше</a></span>
+								</div>
+							</li>
+							<li>
+								<img src="img/main-slider1.jpg" alt="">
+								<div class="aside-slide">
+									<span class="slide-tt">
+										<b>РЕГУЛИРУЕМЫЕ СТОЙКИ</b> по доступной цене!
+									</span>
+									<p>Стойка телескопическая с регулируемыми усилиями демпфирования DEMFI Special позволяет водителю самостоятельно устанавливать желаемые усилия демпфирования!</p>
+									<span class="slide-more"><a href="#">Узнать больше</a></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="middle_beutiful">
+						<div class="bunner-img"></div>
+						<ul class="catalog_tuning">
+							<li class="catalog_item5"><a href="#">Каталог<br> тюнинга</a></li>
+							<li class="catalog_item6"><a href="#">Каталог<br> Подвески</a></li>
+						</ul>
+					</div>
+
+					<ul class="services">
+						<li>
+							<p class="color-st-tt">Автозапчасти <span>в наличии</span> <b>и подзаказ</b></p>
+							<p>Мы предлагаем широкий ассортимент запчастей для иномарок, масел и автостекол.</p>
+							<p>Покупая в нашем Интернет-магазине, вы можете быть уверены нетолько в качестве, но и в самых выгодных ценах!</p>
+						</li>
+						<li>
+							<span class="icon_service1"></span>
+							<p class="title_service">ГОД<span>ГАРАНТИЯ</span></p>
+							<p class="slogan_service">Мы заботимся<span>о наших клиентах</span></p>
+							<span class="wrap_effect"></span>
+						</li>
+						<li>
+							<span class="icon_service2"></span>
+							<p class="title_service">УДОБНАЯ<span>ДОСТАВКА</span></p>
+							<p class="slogan_service">По Москве<span>и регионам РФ</span></p>
+							<span class="wrap_effect"></span>
+						</li>
+						<li>
+							<span class="icon_service3"></span>
+							<p class="title_service">ГИБКАЯ<span>ОПЛАТА</span></p>
+							<p class="slogan_service">Большой выбор<span>способа оплаты</span></p>
+							<span class="wrap_effect"></span>
+						</li>
+						<li>
+							<span class="icon_service4"></span>
+							<p class="title_service">ПОКУПКА<span>В КРЕДИТ	</span></p>
+							<p class="slogan_service">От желаний<span>к воплощению</span></p>
+							<span class="wrap_effect"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="recomended_products">
+					<h2>МЫ РЕКОМЕНДУЕМ</h2>
+					<div class="product_wraper_catalog">
+						<ul class="products_catalog">
+							<li>
+								<a href="#">
+									<img src="img/rec_prod1.jpg" alt="" />
+									<p class="price">5 900 <span>руб.</span><span class="icon_price"></span></p>
+									<p>Спойлер Mugen-style <span>для Accord 7</span></p>
+									<span class="wrap_hover_effect"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/rec_prod2.jpg" alt="" />
+									<p class="price">235 900  <span>руб.</span><span class="icon_price"></span></p>
+									<p>обвес для Lancer X <span>Sport 2</span></p>
+									<span class="wrap_hover_effect"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/rec_prod3.jpg" alt="" />
+									<p class="price">15 900  <span>руб.</span><span class="icon_price"></span></p>
+									<p>задняя альтернативная <span>оптика для is 250</span></p>		
+									<span class="wrap_hover_effect"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/rec_prod4.jpg" alt="" />
+									<p class="price">24 900  <span>руб.</span><span class="icon_price"></span></p>
+									<p>Регулируемая подвеска <span>GS/GF STI 93-00</span> <span>D2-S05Street</span></p>
+									<span class="wrap_hover_effect"></span>
+								</a>
+							</li>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/rec_prod4.jpg" alt="" />
+									<p class="price">24 900  <span>руб.</span><span class="icon_price"></span></p>
+									<p>Регулируемая подвеска <span>GS/GF STI 93-00</span> <span>D2-S05Street</span></p>
+									<span class="wrap_hover_effect"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="typography_box index-typo">
+					<h2><b>ОСОБЫЙ ХАРАКТЕР</b> вашего авто</h2>
+					<p><b><i>Мы предлагаем нашим покупателям наиболее популярные и необходимые аксессуары, обвесы, а также самые разнообразные детали тюнинга для Вашего автомобиля как в наличии, так и на заказ по приемлемым ценам! </i></b></p>
+					<p>Автотюнинг выделит Ваш автомобиль среди обычных заводских моделей, сделает его красивым и придаст ему изысканность и неповторимую внешность, а так же улучшит аэродинамические свойства. Тюнинг салона автомобиля ― это изменение дизайна салона, то есть перетяжка сидений и потолка, установка развлекательного мультимедийного оборудования, установка дополнительного освещения, тонировка.</p>
+				</div>
+				<div class="vk-module">
+					<a href="#"><img src="img/vk-module.jpg" height="216" width="961" alt=""></a>
+				</div>
+			</div>
+        </div><!-- #container-->
+    </section><!-- #middle-->
+</div><!-- #wrapper -->
+
+<footer id="footer" class="footer">
+	<div class="footer_centered">
+		<div class="phone_numb_one">
+			<p><span>8 800</span> 555 0376</p>
+			<span>+7 925 461 6171</span>
+		</div>
+		<div class="footer_logo"><a href="#"><img src="img/footer-logo.png" alt="" /></a></div>
+		<ul class="footer_menu">
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Доставка</a></li>
+			<li><a href="#">Статьи</a></li>
+			<li><a href="#">Как купить?</a></li>
+			<li><a href="#">Покупка в кредит</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</div>
+</footer><!-- #footer -->
+</body>
+</html>
