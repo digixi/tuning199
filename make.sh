@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rsync -a ./ build --exclude build .gitignore make.sh
+rsync -a --exclude-from=".buildignore" * build
 cd build
 git add .
 git commit -am 'deploy'
